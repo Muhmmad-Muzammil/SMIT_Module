@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects - Muhammad Muzammil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .projects {
+            padding: 50px 15px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .card h4 {
+            margin-top: 15px;
+        }
+
+        .card p {
+            margin: 10px 15px;
+        }
+
+        .card-footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background: #f5f5f5;
+            /* Light gray footer */
+            color: #333;
+            /* Dark gray text */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .social-links a {
+            color: #6a11cb;
+            /* Accent color for social links */
+            margin: 0 15px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #2575fc;
+            /* Slightly darker accent color on hover */
+        }
+
+        footer {
+            background: linear-gradient(to right, #0d47a1, #1976d2);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        footer .social-links {
+            margin: 20px 0;
+        }
+
+        footer .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-links a:hover {
+            color: #6a11cb;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="Index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#python-projects"><i class="fab fa-python"></i> Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#html-projects"><i class="fab fa-html5"></i> HTML/CSS/Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#game-projects"><i class="fas fa-gamepad"></i> Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Project.html"><i class="fas fa-info-circle"></i> About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title text-center">All Projects</h2>
+
+            <!-- Python Projects -->
+            <h3 id="python-projects" class="mt-5">Python Projects</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="RMS.jpg" alt="Restaurant Management System">
+                        <h4>Restaurant Management System (RMS)</h4>
+                        <p>A Python-based GUI application for managing restaurant orders, inventory, and staff details.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="LMS.jpg" alt="Library Management System">
+                        <h4>Library Management System (LMS)</h4>
+                        <p>A Python-based GUI system for managing library books, student records, and borrowing details.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="HMS.jpg" alt="Hospital Management System">
+                        <h4>Hospital Management System (HMS)</h4>
+                        <p>A Python GUI system for managing hospital records, patient information, and appointment scheduling.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="Screenshot 2024-11-19 171821.png" alt="Language Translator">
+                        <h4>Language Translator</h4>
+                        <p>A Python-based application for translating text into multiple languages using Google Translate API.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML/CSS/Bootstrap Projects -->
+            <h3 id="html-css-bootstrap" class="mt-5">HTML, CSS, Bootstrap Projects</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="youtub_clone.jpg" alt="YouTube Clone">
+                        <h4>YouTube Clone</h4>
+                        <p>A responsive YouTube clone built using HTML, CSS, and Bootstrap.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="Ecommerce websit.jpg" alt="Ecommerce Website">
+                        <h4>Ecommerce Website</h4>
+                        <p>An Amazon-inspired e-commerce website with shopping cart and user authentication.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="NetflixCne.jpg" alt="Netflix Clone">
+                        <h4>Netflix Clone</h4>
+                        <p>A Netflix-like web application built with HTML, CSS, and Bootstrap.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="TeslaClone.jpg" alt="Tesla Clone">
+                        <h4>Tesla Clone</h4>
+                        <p>A Tesla homepage clone with interactive design using HTML, CSS, and Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Projects -->
+            <h3 id="game-projects" class="mt-5">Game Projects (C, C++, C#, Python)</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="supermario.jpg" alt="Super Mario Game">
+                        <h4>Super Mario Game</h4>
+                        <p>A Super Mario game built using Python with Pygame, featuring levels and obstacles.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="game02.jpg" alt="Snake Game">
+                        <h4>Snake Game</h4>
+                        <p>A classic Snake game developed in Python with a GUI interface.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="Tetris.jpeg" alt="Tetris Game">
+                        <h4>Tetris Game</h4>
+                        <p>A Tetris game developed in C/C++ with scoring and mechanics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 Muhammad Muzammil. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+<footer>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="#skills" class="text-white text-decoration-none">Skills</a></li>
+                    <li><a href="#projects" class="text-white text-decoration-none">Projects</a></li>
+                    <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Me</h5>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/muhammad-muzammil-7562bb316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/Muhmmad-Muzammil?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.instagram.com/muzammil_techteasure1?igsh=MXQ1aGJ3eWh0a21vZQ==" target="_blank"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact</h5>
+                <p>Email: <a href="mailto:muzans@gmail.com" class="text-white text-decoration-none">muzans786@gmail.com</a></p>
+                <p>Phone: <a href="tel:+923172855256" class="text-white text-decoration-none">+923172855256</a></p>
+            </div>
+        </div>
+        <p class="mt-3">&copy; 2024 Muhammad Muzammil. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</html>
